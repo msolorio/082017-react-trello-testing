@@ -21,7 +21,6 @@ describe('<Board/>', () => {
         expect(wrapper.contains(<h2>{title}</h2>)).toEqual(true);
     });
 
-
     it('Can add lists to the state', () => {
         const wrapper = shallow(<Board/>);
         const instance = wrapper.instance();
@@ -39,5 +38,3 @@ describe('<Board/>', () => {
         expect(firstList.prop('title')).toEqual(seedLists[0]);
     });
 });
-
-
